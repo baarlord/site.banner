@@ -8,9 +8,6 @@ use Bitrix\Main\Engine\Controller,
 
 class Ajax extends Controller
 {
-    /**
-     * @return array
-     */
     public function configureActions()
     {
         return [
@@ -20,11 +17,6 @@ class Ajax extends Controller
         ];
     }
 
-    /**
-     * @param string $param2
-     * @param string $param1
-     * @return array
-     */
     public static function applyAction()
     {
         if (!Loader::includeModule("site.banner")) {
